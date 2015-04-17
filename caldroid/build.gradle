@@ -21,3 +21,17 @@ dependencies {
     compile 'com.android.support:support-v4:21.0.3'
     compile 'com.darwinsys:hirondelle-date4j:1.5.1'
 }
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.github.dcendents:android-maven-plugin:1.2'
+    }
+}
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.roomorama.ff'
+version = '1.1.8'
